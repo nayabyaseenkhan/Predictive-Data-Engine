@@ -51,3 +51,15 @@ df["Embarked"] = df["Embarked"].map({
 })
 print("\nEncoded Dataset")
 print(df.head())
+
+# Select input features
+X = df.drop(columns=["PassengerId", "Name", "Ticket", "Survived"])
+
+# Target variable
+y = df["Survived"]
+
+print("\nFeatures Shape:", X.shape)
+print("Target Shape:", y.shape)
+
+print("\nSelected Features:")
+print(X.head())
