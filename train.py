@@ -1,4 +1,6 @@
 import pandas as pd
+from sklearn.model_selection import train_test_split
+from sklearn.linear_model import LogisticRegression
 
 # Load the dataset
 df = pd.read_csv("data/train.csv")
@@ -64,7 +66,6 @@ print("Target Shape:", y.shape)
 print("\nSelected Features:")
 print(X.head())
 
-from sklearn.model_selection import train_test_split
 # Split the dataset
 X_train, X_test, y_train, y_test = train_test_split(
     X,
@@ -78,3 +79,11 @@ print("Training Features:", X_train.shape)
 print("Testing Features :", X_test.shape)
 print("Training Labels  :", y_train.shape)
 print("Testing Labels   :", y_test.shape)
+
+# Create the model
+model = LogisticRegression(max_iter=1000)
+
+# Train the model
+model.fit(X_train, y_train)
+
+print("\n Model trained successfully!")
