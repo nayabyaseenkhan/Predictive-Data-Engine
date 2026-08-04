@@ -5,7 +5,5 @@ __pycache__/
 
 .ipynb_checkpoints/
 
-models/*.pkl
-
 .DS_Store
 Thumbs.db
