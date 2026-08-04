@@ -50,7 +50,6 @@ Predictive-Data-Engine
 ├── models
 ├── notebooks
 ├── screenshots
-├── assets
 ├── venv
 ├── .gitignore
 ├── app.py
