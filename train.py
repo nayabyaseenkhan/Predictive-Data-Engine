@@ -63,3 +63,18 @@ print("Target Shape:", y.shape)
 
 print("\nSelected Features:")
 print(X.head())
+
+from sklearn.model_selection import train_test_split
+# Split the dataset
+X_train, X_test, y_train, y_test = train_test_split(
+    X,
+    y,
+    test_size=0.2,
+    random_state=42
+)
+
+print("\n===== Dataset Split =====")
+print("Training Features:", X_train.shape)
+print("Testing Features :", X_test.shape)
+print("Training Labels  :", y_train.shape)
+print("Testing Labels   :", y_test.shape)
