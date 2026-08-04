@@ -39,3 +39,15 @@ df["Embarked"] = df["Embarked"].fillna(df["Embarked"].mode()[0])
 
 print("\nMissing Values After Cleaning")
 print(df.isnull().sum())
+
+# Encode the 'Sex' column
+df["Sex"] = df["Sex"].map({"male": 0, "female": 1})
+
+# Encode the 'Embarked' column
+df["Embarked"] = df["Embarked"].map({
+    "S": 0,
+    "C": 1,
+    "Q": 2
+})
+print("\nEncoded Dataset")
+print(df.head())
