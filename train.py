@@ -6,6 +6,7 @@ from sklearn.metrics import (
     confusion_matrix,
     classification_report
 )
+import joblib
 
 # Load the dataset
 df = pd.read_csv("data/train.csv")
@@ -109,3 +110,8 @@ print(confusion_matrix(y_test, y_pred))
 
 print("\nClassification Report:")
 print(classification_report(y_test, y_pred))
+
+# Save the trained model
+joblib.dump(model, "models/titanic_model.pkl")
+
+print("\nModel saved successfully!")
