@@ -44,23 +44,20 @@ This project demonstrates the complete Machine Learning workflow:
 ## 📂 Project Structure
 
 ```text
-Predictive-Data-Engine/
+Predictive-Data-Engine
 │
+├── data
+├── models
+├── notebooks
+├── screenshots
+├── assets
+├── venv
+├── .gitignore
 ├── app.py
-├── train.py
 ├── predict.py
 ├── README.md
 ├── requirements.txt
-│
-├── data/
-│   └── train.csv
-│
-├── models/
-│   └── titanic_model.pkl
-│
-├── notebooks/
-│   └── Titanic_EDA.ipynb
-```
+└── train.py
 
 ---
 
@@ -120,15 +117,23 @@ The model predicts whether a passenger survived based on the provided input feat
 
 ---
 
-## 📷 Screenshots
+## 📸 Application Screenshots
 
-Add screenshots here after running the application.
+### Home Page
 
-Example:
+![Home](screenshots/home.png)
 
-- Home Screen
-- Prediction Result
-- Passenger Details
+---
+
+### Prediction
+
+![Prediction](screenshots/prediction.png)
+
+---
+
+### Result
+
+![Result](screenshots/result.png)
 
 ---
 
