@@ -30,3 +30,12 @@ print(df.describe())
 # Missing values
 print("\n===== Missing Values =====")
 print(df.isnull().sum())
+
+df = df.drop(columns=["Cabin"])
+
+df["Age"] = df["Age"].fillna(df["Age"].median())
+
+df["Embarked"] = df["Embarked"].fillna(df["Embarked"].mode()[0])
+
+print("\nMissing Values After Cleaning")
+print(df.isnull().sum())
