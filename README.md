@@ -2,8 +2,14 @@
 
 A Machine Learning web application that predicts whether a passenger would survive the Titanic disaster using Logistic Regression and Streamlit.
 
----
+---------
 
+## 🚀 Live Demo
+
+🔗 **Try the application here**
+
+https://predictive-data-engine.streamlit.app/
+ 
 ## 📌 Project Overview
 
 This project demonstrates the complete Machine Learning workflow:
